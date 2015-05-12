@@ -1,6 +1,10 @@
 ;(setq org-mobile-directory "/scp:grantham@ssh.hcoop.net:org")
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
+(define-key global-map "\C-cl" 'org-store-link)
 (add-hook 'org-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
-(visual-line-mode t)
+(setq org-log-done t)
+(setq org-agenda-files (list "~/diary.org"))
+
