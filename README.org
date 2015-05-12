@@ -1,0 +1,20 @@
+#+TITLE: My Emacs set-up
+* Layout
+- init.el
+  - customizations
+    - company-mode-setup.el
+    - editing.el
+    - elisp-editing.el
+    - misc.el
+    - navigation.el
+    - org-mode-customizations.el
+    - setup-clojure.el
+    - setup-haskell.el
+    - setup-js.el
+    - setup-ruby.el
+    - setup-python.el
+    - shell-integration.el
+    - ui.el
+- UI changes
+- Emacs server
+- Other nits...
