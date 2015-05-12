@@ -62,8 +62,11 @@
     projectile
 
     ;; colorful parenthesis matching
-    rainbow-delimiters
+    ;;rainbow-delimiters
 
+    ;; block matching
+    rainbow-blocks
+    
     ;; edit html tags like sexps
     tagedit
 

@@ -38,7 +38,7 @@
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
 (setq initial-frame-alist 
-      '((top . 2) (left . 24) (width . 120) (height . 62)))
+      '((top . 2) (left . 24) (width . 102) (height . 52)))
 
 ;; These settings relate to how emacs interacts with your operating system
 (setq ;; makes killing/yanking interact with the clipboard
