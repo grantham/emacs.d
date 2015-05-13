@@ -7,4 +7,8 @@
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 (setq org-log-done t)
 (setq org-agenda-files (list "~/diary.org"))
-
+(add-hook 'org-mode-hook 'turn-on-visual-line-mode)
+;; Flyspell
+;; http://www.emacswiki.org/emacs/FlySpell
+(dolist (hook '(org-mode-hook))
+  (add-hook hook (lambda () (flyspell-mode 1))))

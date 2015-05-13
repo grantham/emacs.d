@@ -48,6 +48,9 @@
     ;; https://github.com/clojure-emacs/cider
     cider
 
+    
+    cmake-mode
+
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/navigation.el line 23 for a description
     ;; of ido
@@ -62,16 +65,19 @@
     projectile
 
     ;; colorful parenthesis matching
-    ;;rainbow-delimiters
+    rainbow-delimiters
 
     ;; block matching
-    rainbow-blocks
+    ;rainbow-blocks
     
     ;; edit html tags like sexps
     tagedit
 
     ;; git integration
     magit
+
+    ;; markdown
+    markdown-mode
 
     ;; company mode
     ;;company-mode
@@ -111,6 +117,9 @@
 ;; Customization
 ;;;;
 
+;; turn on server mode
+(server-mode t)
+
 ;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
@@ -119,8 +128,12 @@
 ;; environment variables
 (load "shell-integration.el")
 
+;;
+;; tools
+;;
 ;; company-mode
 ;(load "company-mode-setup.el")
+(load "setup-cmake.el")
 
 ;; These customizations make it easier for you to navigate files,
 ;; switch buffers, and choose options from the minibuffer.
