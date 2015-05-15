@@ -146,6 +146,7 @@
 ;; These customizations make editing a bit nicer.
 (load "editing.el")
 (load "org-mode-customizations.el")
+(load "setup-markdown-mode.el")
 
 ;; Hard-to-categorize customizations
 (load "misc.el")
