@@ -32,32 +32,6 @@
 (load-theme 'wheatgrass t)
 
 ;; increase font size for better readability
-;(add-to-list 'default-frame-alist '(font . FONT ))
-(cond ((string-equal system-type "windows-nt")
-       (set-face-attribute 'default nil 
-                    :family "Consolas" 
-                    :foundry "outline" 
-                    :height 120)
-       )
-      ((string-equal system-type "gnu/linux")
-       (set-face-attribute 'default nil 
-                    :family "Consolas" 
-                    :foundry "outline" 
-                    :slant normal 
-                    :weight normal 
-                    :height 120 
-                    :width normal
-		    ))
-      ((string-equal system-type "darwin")
-       (set-face-attribute 'default nil 
-                    :family "Consolas" 
-                    :foundry "outline" 
-                    :slant normal 
-                    :weight normal 
-                    :height 120 
-                    :width normal
-		    )))
-
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
