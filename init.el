@@ -47,9 +47,13 @@
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
     cider
-
     
     cmake-mode
+    
+    ;; company mode -- autocompletion
+    company
+
+    ggtags
 
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/navigation.el line 23 for a description
@@ -60,7 +64,7 @@
     ;; a filterable list of possible commands in the minibuffer
     ;; http://www.emacswiki.org/emacs/Smex
     smex
-
+    
     ;; project navigation
     projectile
 
@@ -69,6 +73,9 @@
 
     ;; block matching
     ;rainbow-blocks
+    
+    ;; speedbar
+    sr-speedbar
     
     ;; edit html tags like sexps
     tagedit
@@ -150,9 +157,14 @@
 
 ;; Hard-to-categorize customizations
 (load "misc.el")
+(load "setup-company.el")
+(load "setup-sr-speedbar.el")
 
 ;; For editing lisps
 (load "elisp-editing.el")
+
+;; ggtags
+(load "setup-ggtags.el")
 
 ;; Langauage-specific
 (load "setup-clojure.el")
