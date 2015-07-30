@@ -53,6 +53,9 @@
     ;; company mode -- autocompletion
     company
 
+    ;; arg complection for C++
+    function-args
+
     ggtags
 
     ;; allow ido usage in as many contexts as possible. see
@@ -159,6 +162,7 @@
 (load "misc.el")
 (load "setup-company.el")
 (load "setup-sr-speedbar.el")
+(load "setup-semantic.el")
 
 ;; For editing lisps
 (load "elisp-editing.el")
@@ -167,6 +171,7 @@
 (load "setup-ggtags.el")
 
 ;; Langauage-specific
+(load "setup-function-args.el") ;; C++ specific
 (load "setup-clojure.el")
 (load "setup-js.el")
 (load "setup-ruby.el")
