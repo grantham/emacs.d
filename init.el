@@ -29,6 +29,10 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+;; For C / C++ setup information, see:
+;; http://tuhdo.github.io/c-ide.html
+
+
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
 ;; Add in your own as you wish:
