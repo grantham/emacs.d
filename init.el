@@ -56,6 +56,8 @@
     
     ;; company mode -- autocompletion
     company
+    company-c-headers
+    ;(add-to-list 'company-backends 'company-c-headers)
 
     ;; arg complection for C++
     function-args
@@ -146,7 +148,7 @@
 ;; tools
 ;;
 ;; company-mode
-;(load "company-mode-setup.el")
+(load "company-mode-setup.el")
 (load "setup-cmake.el")
 
 ;; These customizations make it easier for you to navigate files,
