@@ -75,6 +75,12 @@
     ;; project navigation
     projectile
 
+    ;; puppet mode
+    puppet-mode
+
+    ;; not sure if the flymake-puppet plugin is needed
+    flymake-puppet
+
     ;; colorful parenthesis matching
     rainbow-delimiters
 
