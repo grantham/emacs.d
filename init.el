@@ -83,6 +83,9 @@
     ;; not sure if the flymake-puppet plugin is needed
     flymake-puppet
 
+    ;; salt-mode
+    salt-mode
+
     ;; colorful parenthesis matching
     rainbow-delimiters
 
