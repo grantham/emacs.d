@@ -11,3 +11,5 @@ backups
 elpa
 themes
 url
+session*
+semanticdb/
