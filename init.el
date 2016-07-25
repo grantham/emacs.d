@@ -52,7 +52,16 @@
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
     cider
-    
+
+    ;;
+    ;; Python integration
+    ;;
+    python-mode
+    elpy
+    ;; pytest -- provided by elpy I think
+    ;; realgud ;; interactive debugging may be provided by elpy
+
+    ; modest CMake support
     cmake-mode
     
     ;; company mode -- autocompletion
@@ -83,9 +92,6 @@
 
     ;; not sure if the flymake-puppet plugin is needed
     flymake-puppet
-
-    ;; salt-mode
-    salt-mode
 
     ;; colorful parenthesis matching
     rainbow-delimiters
