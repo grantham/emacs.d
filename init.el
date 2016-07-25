@@ -1,5 +1,6 @@
 (setenv "PATH" (concat (getenv "PATH") ":~/bin"))
 (setq exec-path (append exec-path '("~/bin")))
+
 ;;;;
 ;; Packages
 ;;;;
@@ -117,7 +118,9 @@
 ;; environment variables from the user's shell.
 ;; https://github.com/purcell/exec-path-from-shell
 (if (eq system-type 'darwin)
-    (add-to-list 'my-packages 'exec-path-from-shell))
+    (progn
+      (add-to-list 'my-packages 'exec-path-from-shell)
+      (setq ns-pop-up-frames 'nil)))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -140,10 +143,10 @@
 
 ;;;;
 ;; Customization
-;;;;
-
+;; 
 ;; turn on server mode
-(server-mode t)
+;;(server-mode t)
+(server-start)
 
 ;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.
