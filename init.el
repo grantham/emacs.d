@@ -1,5 +1,6 @@
 (setenv "PATH" (concat (getenv "PATH") ":~/bin"))
 (setq exec-path (append exec-path '("~/bin")))
+
 ;;;;
 ;; Packages
 ;;;;
@@ -51,7 +52,16 @@
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
     cider
-    
+
+    ;;
+    ;; Python integration
+    ;;
+    python-mode
+    elpy
+    ;; pytest -- provided by elpy I think
+    ;; realgud ;; interactive debugging may be provided by elpy
+
+    ; modest CMake support
     cmake-mode
     
     ;; company mode -- autocompletion
@@ -82,9 +92,6 @@
 
     ;; not sure if the flymake-puppet plugin is needed
     flymake-puppet
-
-    ;; salt-mode
-    ;;salt-mode
 
     ;; colorful parenthesis matching
     rainbow-delimiters
@@ -117,7 +124,9 @@
 ;; environment variables from the user's shell.
 ;; https://github.com/purcell/exec-path-from-shell
 (if (eq system-type 'darwin)
-    (add-to-list 'my-packages 'exec-path-from-shell))
+    (progn
+      (add-to-list 'my-packages 'exec-path-from-shell)
+      (setq ns-pop-up-frames 'nil)))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -140,10 +149,10 @@
 
 ;;;;
 ;; Customization
-;;;;
-
+;; 
 ;; turn on server mode
-(server-mode t)
+;;(server-mode t)
+(server-start)
 
 ;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.

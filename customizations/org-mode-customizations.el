@@ -7,11 +7,18 @@
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 (setq org-log-done t)
 (setq org-agenda-files (list "~/commonplace/diary.org"
-                             "~/commonplace/diary/01_2015.org"
-                             "~/commonplace/diary/02_2015.org"
-                             "~/commonplace/diary/03_2015.org"
-                             "~/commonplace/diary/04_2015.org"
-                             "~/commonplace/diary/05_2015.org"
+                             "~/commonplace/diary/2016_01.org"
+                             "~/commonplace/diary/2016_02.org"
+                             "~/commonplace/diary/2016_03.org"
+                             "~/commonplace/diary/2016_04.org"
+                             "~/commonplace/diary/2016_05.org"
+                             "~/commonplace/diary/2016_06.org"
+                             "~/commonplace/diary/2016_07.org"
+                             "~/commonplace/diary/2016_08.org"
+                             "~/commonplace/diary/2016_09.org"
+                             "~/commonplace/diary/2016_10.org"
+                             "~/commonplace/diary/2016_11.org"
+                             "~/commonplace/diary/2016_12.org"
 ))
 (add-hook 'org-mode-hook 'turn-on-visual-line-mode)
 ;; Flyspell
